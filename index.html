@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Board</title>
+</head>
+<body>
+    <h1>CHESS BOARD</h1>
+    <script>
+        document.write("<table>");
+            for(var i=1;i<=8;i++){
+                document.write("<tr>");
+                    for(var j=1;j<=8;j++){
+                        if((i+j)%2==0){
+                            document.write("<td style='background-color : black'></td>");
+                        }
+                        else{
+                            document.write("<td></td>");
+                        }
+                    }
+                document.write("<tr>")
+
+            }
+
+        document.write("</table>")
+
+    </script>
+</body>
+</html>
